@@ -1,0 +1,17 @@
+{
+  "name": "projet-devops-fil-rouge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": { 
+    "lint": "eslint app.js", 
+    "format": "prettier --write app.js" 
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "prettier": "^3.8.1"
+  }
+}
