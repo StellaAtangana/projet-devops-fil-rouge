@@ -20,7 +20,7 @@ jobs:
           node-version: 18
 
       - name: Installer les dépendances du projet
-        run: npm install
+        run: [npm install]
 
       - name: Vérification ESLint
-        run: npm run lint
+        run: [npm run lint]
