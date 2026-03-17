@@ -1,0 +1,25 @@
+name: Vérification de la qualité du code 
+# 1. Quand est-ce que ce pipeline doit se lancer ? 
+on: 
+  push: 
+    branches: [ "main" ] 
+  pull_request: 
+    branches: [ "main" ] 
+# 2. Que doit faire le serveur ? 
+jobs: 
+  lint: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Récupération du code
+        uses: actions/checkout@v3 
+
+      - name: Installation de Node.js 
+        uses: actions/setup-node@v3 
+        with: 
+          node-version: 18 
+
+      - name: Installer les dépendances (ESLint, Prettier, etc.) 
+        run: npm install --save-dev eslint prettier 
+
+      - name: Lancer notre policier du code 
+        run: npm run lint 
