@@ -1,0 +1,27 @@
+{
+  "name": "projet-devops-fil-rouge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js app.js",
+    "format": "prettier --write app.js",
+    "test": "node ./node_modules/jest/bin/jest.js --coverage --rootDir=."
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js",
+      "**/projet-devops-fil-rouge/**/*.test.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 80
+      }
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^10.0.3",
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1"
+  }
+}
