@@ -5,8 +5,8 @@
   "scripts": {
     "lint": "node ./node_modules/eslint/bin/eslint.js app.js",
     "format": "prettier --write app.js",
-    "test": "jest --coverage"
-  },
+    "test": "node ./node_modules/jest/bin/jest.js --coverage"
+},
   "jest": {
     "coverageThreshold": {
       "global": {
