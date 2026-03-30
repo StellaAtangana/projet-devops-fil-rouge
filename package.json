@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint app.js",
+    "lint": "npx eslint app.js",
     "format": "prettier --write app.js",
     "test": "jest --coverage "
   },
