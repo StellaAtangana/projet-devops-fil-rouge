@@ -24,3 +24,7 @@ jobs:
 
       - name: Vérification ESLint
         run: npm run lint
+
+      - name: Lancer les test automatisés
+        run: npm test
+#VERIFIE LA GENERICIT2 DU CODE FORMATTAGE ETC...

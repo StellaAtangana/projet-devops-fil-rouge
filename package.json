@@ -2,16 +2,25 @@
   "name": "projet-devops-fil-rouge",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": { 
-    "lint": "eslint app.js", 
-    "format": "prettier --write app.js" 
-},
+  "scripts": {
+    "lint": "eslint app.js",
+    "format": "prettier --write app.js",
+    "test": "jest --coverage "
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 80
+      }
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "eslint": "^10.0.3",
+    "jest": "^30.3.0",
     "prettier": "^3.8.1"
   }
 }
