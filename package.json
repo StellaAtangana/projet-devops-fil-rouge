@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint app.js",
+    "lint": "node ./node_modules/eslint/bin/eslint.js app.js",
     "format": "prettier --write app.js",
-    "test": "jest --coverage "
+    "test": "jest --coverage"
   },
   "jest": {
     "coverageThreshold": {
