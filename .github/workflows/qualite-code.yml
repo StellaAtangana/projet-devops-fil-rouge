@@ -9,6 +9,9 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./projet-devops-fil-rouge
 
     steps:
       - name: Récupération du code
@@ -27,4 +30,3 @@ jobs:
 
       - name: Lancer les tests automatisés
         run: npm test
-#VERIFIE LA GENERICIT2 DU CODE FORMATTAGE ETC...
